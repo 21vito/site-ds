@@ -1,0 +1,183 @@
+/*
+!!!!!!
+HMTL = ID
+CSS  = #  
+   
+HTML = class
+CSS  = . 
+
+HTML = pseudoclass
+CSS = :
+!!!!!!
+*/
+
+/* IMPORTANDO UMA FONTE EXTERNA */
+@import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
+
+/* IMPORTANDO UMA FONTE INTERNA DO COMPUTADOR */
+@font-face {
+    font-family: DS;
+    src: url('fontes/trajan-regular.ttf'), url('fontes/trajan-bold.ttf');
+}
+/* METODO PARA DEIXAR BLOCOS LADO A LADO */
+.indent-1 {float: left;}
+
+.indent-1 section {width: 50%; float: left;}
+
+:root {
+    /* PALETA:*/
+    --cor01: #EDD749; 
+    --cor02: #EBAF54; 
+    --cor03: #A63C06;
+    --cor04: #710000;
+    --cor05: #1A181B;
+    --cor06: #596157;
+    --cor07: #ff9900;
+}
+
+/* LINKS-------------------------------------------------------------- */
+a {
+    color: var(--cor07);
+    background-color: var(--cor04);
+    text-decoration: underline;
+    margin-left: 3px;
+    padding-bottom: 40px;
+    border: 2px groove rgb(0, 0, 0);
+
+    /*PADDING =  DISTANCIA ENTRE CONTEUDO E BORDA */
+    padding: 4px;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: var(--cor07);
+    color: var(--cor04);
+}
+/* -------------------------------------------------------------------- */
+
+/* UTILIZANDO A DIV: HOVER PARA ESCONDER E MOSTRAR BLOCOS QUANDO REQUISITADOS ------------]*/
+div > .hidden {
+    display: none;
+}
+/* TODOS OS ELEMENTOS QUE ESTEJAM NA CLASSE: "hidden" E ESTIVEREM DENTRO DE UM DIV VÃO SOFRER ESSAS CONDIÇÕES DE SEREM ESCONDIDOS */
+
+div:hover > .hidden {
+    display: block;
+} 
+/* ------------------------------------------------]*/
+
+body {
+    
+    /* DETERMINANDO O GRADIENTE DE CORES QUE IRÁ COMPOR O FUNDO */
+    background-image: linear-gradient(to right, var(--cor01), var(--cor02),  var(--cor03));
+    background-attachment: fixed;
+    font-size: 15px;
+    font-family: 'DS', serif;
+
+} 
+
+#imghm {
+    width: 100%;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor04), var(--cor05));
+    border: solid black 2px;
+}
+
+.fundo {
+
+    /* ADICIONANDO UM QUADRO ONDE TODO O CONTEUDO ESTARÁ */
+    background-image: linear-gradient(to bottom, var(--cor04), var(--cor05));
+
+    /* LARGURA */
+    min-width: 280px;
+    max-width: 850px;
+ 
+    /* ALTURA */
+    padding: 3px;
+    
+    /* AONDE FICARÁ A MARGEM DO QUADRO (AUTO = AUTO-CENTRALIZAR*/
+    margin: auto;
+
+    /* O QUÃO CURVADA SERÁ A BORDA */
+    border-radius: 5px;
+
+    /* A SOMBRA DO QUADRO */
+    box-shadow: 5px 5px 15px #191f2074;
+
+    /* A POSIÇÃO DO QUADRO E DO CONTEUDO */
+    text-align: center;
+
+    /* UTILIZA A FONTE ROSARIVO COMO PADRÃO DO BODY */
+    font-family: Rosarivo;
+
+    /* ADD UMA BORDA EM TORNO DO QUADRO */
+    border: 5px groove rgb(0, 0, 0);
+    
+}
+
+/* DEFINIÇÕES PADRÃO DO h1 */
+h1 {color: rgb(0, 0, 0);}
+
+/* DEFINIÇÕES PADRÃO DO h2 */
+h2 {color: rgb(0, 0, 0);}
+
+/* DEFINIÇÕES PADRÃO DO p */
+p { 
+    color: var(--cor07);
+    text-align: justify;
+}
+
+.lista {
+    color: var(--cor07);
+    background-color: var(--cor04);
+    border: 5px groove rgb(0, 0, 0);
+    padding: 10px;
+    margin: auto;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+/* !!!MARCADOR DE TEXTO!!! */
+mark{background-color: rgb(243, 119, 108);}    
+
+/* CLASSES ------------------------------------------------]*/
+
+/* CLASSE TITULO PRINCIPAL */
+.ttl {
+    font-size: 20px;
+    border: 2px groove rgb(0, 0, 0);
+    margin-right: 10px;
+    background-color: var(--cor04);
+    color: var(--cor07);
+    padding: 1px;
+}
+
+/* CLASSE TITULO SECUNDARIO */
+.ttl2 {
+    font-size: 16px;
+}
+
+/* CLASSE PARAGRAFO */
+.txto {
+    color: var(--cor07);
+    background-image: linear-gradient(to bottom, var(--cor04), var(--cor05));
+    border: 2px groove rgb(0, 0, 0);
+    padding: 10px;
+    margin: auto;
+    font-size: 15px;
+
+}
+
+/* CLASSE PARA TEXTO LADO A LADO */
+.tsbs {
+    color: var(--cor07);
+    background-color: var(--cor04);
+    border: 2px groove rgb(0, 0, 0);
+    padding: 50px;
+    margin: auto;
+    font-size: 15px;
+    height: 350px;
+}
+
