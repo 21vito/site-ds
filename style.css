@@ -181,3 +181,16 @@ mark{background-color: rgb(243, 119, 108);}
     height: 350px;
 }
 
+div.video {
+    margin: 30px 5px 30px 5px;
+    padding: 20px;
+    padding-bottom: 70%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+}
+
